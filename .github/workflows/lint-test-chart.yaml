@@ -5,6 +5,9 @@ on:
     paths:
       - "charts/external-dns/**"
 
+permissions:
+  contents: read
+
 jobs:
   lint-test:
     if: github.repository == 'kubernetes-sigs/external-dns'
